@@ -6,15 +6,23 @@
 
 </ul>
 <% for post in @posts %>
-<li>
-    <%=post ["title"]%>
-    <%=post ["posted_on"]%>
-    <%=post ["description"]%>
 
-</li>
+    <p> <h4>
+    <%=post ["title"]%>
+    </h4>
+    </p>
+    <p> <%=post ["posted_on"]%> 
+    </p>  
+    <p>
+        <%=post ["description"]%>
+    </p>
+
+
 <%end%>
 </ul>
 
 <p>
-<a href="/posts/new?place_id=<%= @place["id"] %>"> Add activity for <%= @place ["name"]%> </a>
+<h4>
+<a href="/posts/new?place_id=<%= @place["id"] %>"> New Post <%= @place ["name"]%> </a>
+</h4>
 </p>
