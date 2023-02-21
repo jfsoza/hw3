@@ -4,21 +4,23 @@
 <p>
 <a href="/places"> Back to all places </a>
 
-</ul>
+
+<br></br>
 <% for post in @posts %>
 
-    <p> <h4>
+    <p> <h3>
     <%=post ["title"]%>
-    </h4>
+    </h3>
     </p>
-    <p> <%=post ["posted_on"]%> 
+    <p> <h5><%=post ["posted_on"]%> </h5>
     </p>  
     <p>
         <%=post ["description"]%>
     </p>
-
+<br></br>
 
 <%end%>
+
 </ul>
 
 <p>
